@@ -39,8 +39,21 @@ li {
 h1 {
     font-size: clamp(1.5rem, 3vw, 3rem);
 }
-h2, h3  {
+h2, h3, button  {
     font-size: 1.7rem;
+    margin: 0;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+button[aria-expanded="false"]::before {
+    content: '\25ba\0020';
+}
+button[aria-expanded="true"]::before {
+    content: '\25bc\0020';
+    color: hsl(160, 51%, 70%);
 }
 .body {
     -webkit-font-smoothing: antialiased;
@@ -127,12 +140,7 @@ h2, h3  {
     margin: -2rem;
     position: relative;
     text-align: center;
-    background: whitesmoke url(abder.png) no-repeat top right;
-}
-@media screen and (max-width:48em){
-    .footer {
-        background: whitesmoke;
-    }
+    background-color: #E6E6E6;
 }
 .footer .icon {
     list-style-type: none;
