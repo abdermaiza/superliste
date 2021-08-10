@@ -1,0 +1,217 @@
+html {
+    font-size: 62.5%;
+    font-size: calc(1em * .625);
+    scroll-behavior: smooth;
+}
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body, 
+html {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: hsl(210, 88%, 26%);
+}
+a:hover {
+    color: #66CDAA
+}
+*:focus {
+    outline: 2px solid hsl(200, 90%, 0%); 
+}
+@media screen and (max-width:38em){
+    ul {
+        padding: 1rem;
+    }
+    .list-break li {
+        word-break: break-all;
+    }
+}  
+ul {
+    margin: 2rem 0;
+}      
+li {
+    margin: 1rem 0;
+    list-style-type: symbols;
+}
+h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+h2, h3  {
+    font-size: 1.7rem;
+}
+.body {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    position: relative;
+    padding: 2rem;
+    color: #202020;
+}
+.header {
+    background-color: hsl(160, 51%, 70%);
+    padding: 1rem;            
+    margin: -2rem;
+    margin-top: 3rem;
+}
+.logo {
+    margin: 0 auto;
+    text-align: center;
+}
+.main {
+    margin: 0 auto;
+    max-width: 63rem;
+}
+.section {
+    margin: 4rem 0;
+    background: linear-gradient(30deg, #E6E6E6, #FAF8F9);
+    padding: 2rem;
+    border-radius: .4rem;
+    overflow: hidden;
+}
+.title {
+    text-align: center;
+    margin: 3rem 0;
+}
+.upp {
+    text-transform: uppercase;
+}
+.known {
+    color: hsl(20, 100%, 50%);
+}
+.p0 {
+    padding: 0 !important;
+}
+.row, 
+.flex, 
+.column {
+    display: flex;
+}
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+.date {
+    font-style: italic;
+    position: absolute;
+    bottom: 1rem;
+    margin: 0;
+    left: 1rem;
+}
+.nav--list {
+    padding-left: 2rem;
+}
+.nav--list > li {
+    list-style-type: none;
+    padding: .5rem 1rem;
+    background-color: hsl(160, 51%, 90%);
+    border-radius: .4rem;
+    max-width: 21rem;
+}
+@media screen and (min-width:48rem) {
+    .nav--list {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.plateformes li,
+.companies li {
+    text-transform: capitalize;
+}
+.footer {
+    padding: 4rem;
+    margin: -2rem;
+    position: relative;
+    text-align: center;
+    background: whitesmoke url(abder.png) no-repeat top right;
+}
+@media screen and (max-width:48em){
+    .footer {
+        background: whitesmoke;
+    }
+}
+.footer .icon {
+    list-style-type: none;
+    width: 7.5rem;
+    height: 7.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: hsl(160, 51%, 70%);
+    border-radius: 100%;
+    cursor: pointer;
+}
+.footer .icon--slack {
+    width: 7.5rem;
+}
+.footer .icon svg:hover path {
+    fill: #222;
+}
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+.sr-only--focusable:active,
+.sr-only--focusable:focus{
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+.skippy{
+    display: block;
+    padding: 1rem;
+    z-index: 22;
+    text-align: center;
+    outline: 0;
+    color: #222;
+    background-color: transparent;
+}
+.skippy__text{
+    padding: .5rem;
+    outline: 1px dotted #222;
+}
+.backTop {
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    cursor: pointer;
+    border-radius: 3rem;
+    background: #222 url(https://codyhouse.co/demo/back-to-top/assets/img/cd-top-arrow.svg) no-repeat center 50%;
+    color: #fff;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: all .3s ease-in-out;
+}
+.backTop:hover {
+    background:hsl(0, 0%, 30%) url(https://codyhouse.co/demo/back-to-top/assets/img/cd-top-arrow.svg) no-repeat center 50%;
+}
+.backTop.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
