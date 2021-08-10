@@ -46,6 +46,7 @@ h2, h3, button  {
 button {
     background-color: transparent;
     border: none;
+    text-align: left;
     cursor: pointer;
 }
 button[aria-expanded="false"]::before {
