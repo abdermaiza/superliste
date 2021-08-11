@@ -54,7 +54,6 @@
         
         <section class="section" id="one">
             <h2>1) Job boards spécialisés&nbsp;:</h2>
-
             <div class="panel">
                 <p>Commençons par rechercher sur les sites classiques d'offres d'emplois :</p>
                 <ul class="list-break">
@@ -81,7 +80,6 @@
                     Ce lien donne accès à plusieurs sites internationaux&nbsp;: <a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit/blob/master/README.md#jobs">https://github.com/sdmg15/Best-websites-a-programmer-should-visit/blob/master/README.md#jobs</a>
                 </p>                
             </div>
-
         </section>
 
         <section class="section" id="two">
@@ -112,7 +110,6 @@
                     </li>
                 </ul>  
             </div>
-
         </section>
 
         <section class="section"id="three">
@@ -329,20 +326,18 @@
                     
                 </ul>
                 <p>Enfin, un bon article à lire sur le blog "Jesuisundev" : <a href="https://www.jesuisundev.com/conseils-pour-developpeur-junior/" title="article du blog Je suis un dev">les conseils pour un dev junior</a>.</p>
-            </div>
-            
+            </div> 
         </section>
 
         <section class="section" id="six">
-            <h2>Coming soon :</h2>
+            <h2>A venir :</h2>
             <p>Plusieurs idées à "filtrer au tamis" pour une V2 : fournir une liste de newsletters utiles, aide à la préparation d'entretien d'embauche, témoignages de professionnels dans le web, partage de bons sites techniques, système de duo avec un Mentor (un développeur back junior avec un développeur back senior, par example)...</p>
             <p>Contactez-moi par <a href="mailto:abdermaiza@gmail.com" title="mon e-mail">e-mail</a> si vous souhaitez participer à ce projet !</p>
         </section>
 
     </main>
 
-    <footer class="footer" role="contentinfo">
-        
+    <footer class="footer">
         <h3>Suivez-moi !</h3>
         <p class="sr-only">Liens vers mon Linkedin et un groupe d'entraide Slack.</p>
         <ul class="flex centered p0">
@@ -361,11 +356,8 @@
                 </svg>
             </li> 
         </ul>
-
         <p><a href="https://abdermaiza.com/" title="Mon portfolio">Abderrahmen MAIZA</a>, votre frère du web.</p>
-
-        <p class="date"><small>Date de dernière mise à jour : <time datetime="04-08-2021">11 août 2021</time></small></p>
-
+        <p class="date"><small>Date de dernière mise à jour : <time>11 août 2021</time></small></p>
     </footer>
 
     <a href="#body" title="remonter en haut de la page" aria-hidden="true" class="backTop"></a>
@@ -382,50 +374,32 @@
             }
         });
     </script>
-
     <!-- Accessible accordions -->
     <script>
         function expandCollapse() {
             var theHeaders = document.querySelectorAll('.expandCollapse h2'), i;
-
             for (i = 0; i < theHeaders.length; i++) {
-
                 var thisEl = theHeaders[i],
                 theId = 'panel-' + i;
-
                 var thisTarget = thisEl.parentNode.querySelector('.panel');
-                
                 if (!thisTarget) {
-                continue;
+                    continue;
                 }
-
-                // Create the button
                 thisEl.innerHTML = '<button aria-expanded="false" aria-controls="' + theId + '">' + thisEl.textContent + '</button>';
-
-                // Create the expandable and collapsible list and make it focusable
                 thisTarget.setAttribute('id', theId);
                 thisTarget.setAttribute('hidden', 'true');
             }
-
-            // Make it click
             var theButtons = document.querySelectorAll('.expandCollapse button[aria-expanded][aria-controls]');
-
             for (i = 0; i < theButtons.length; i++) {
-
                 theButtons[i].addEventListener('click', function(e) {
-                var thisButton = e.target;
-                var state = thisButton.getAttribute('aria-expanded') === 'false' ? true : false;
-
-                thisButton.setAttribute('aria-expanded', state);
-
-                document.getElementById(thisButton.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
-                
+                    var thisButton = e.target;
+                    var state = thisButton.getAttribute('aria-expanded') === 'false' ? true : false;
+                    thisButton.setAttribute('aria-expanded', state);
+                    document.getElementById(thisButton.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
                 });
             }
         }
-
         expandCollapse();
-
     </script>
     
 </body>
