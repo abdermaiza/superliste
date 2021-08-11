@@ -246,4 +246,8 @@ button[aria-expanded="true"]::before {
         margin: 1rem 0;
         padding: 0;
     }
+    .known {
+        color: inherit;
+        font-weight: 600;
+    }
 }
