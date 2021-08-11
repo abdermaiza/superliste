@@ -107,9 +107,6 @@ button[aria-expanded="true"]::before {
 .upp {
     text-transform: uppercase;
 }
-.known {
-    color: hsl(20, 100%, 50%);
-}
 .p0 {
     padding: 0 !important;
 }
@@ -245,9 +242,5 @@ button[aria-expanded="true"]::before {
     .section {
         margin: 1rem 0;
         padding: 0;
-    }
-    .known {
-        color: inherit;
-        font-weight: 600;
     }
 }
