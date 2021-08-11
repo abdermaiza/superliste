@@ -237,3 +237,13 @@ button[aria-expanded="true"]::before {
         scroll-behavior: auto;
     }
 }
+@media print {
+    .header,
+    .footer {
+        display: none;
+    }
+    .section {
+        margin: 1rem 0;
+        padding: 0;
+    }
+}
