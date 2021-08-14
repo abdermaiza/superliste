@@ -188,7 +188,7 @@
             <div class="panel">
                 <p>Tout centraliser au même endroit : la recherche d'offres d'emploi vous est ainsi facilité.</p>
                 <p>Le classement alphabétique aide à vous y retrouver rapidement : sociétés, cabinets de recrutement/conseil, agences publicitaires/digitales et autres ESN de la région Parisienne.</p>
-                <ul class="companies" id="alphaIndex">
+                <ul class="companies">
 
                     <li><a href="https://www.accenture.com/fr-fr/careers">accenture</a></li>
                     <li><a href="https://www.acensi.fr/offer">acensi</a></li>
@@ -365,45 +365,7 @@
 
     <a href="#body" title="remonter en haut de la page" aria-hidden="true" class="backTop"></a>
 
-    <!-- Back-to-top animation -->
-    <script>
-        const backtop = document.querySelector('.backTop');
-        window.addEventListener('scroll', () => {
-            if(window.scrollY > 500) {
-                backtop.classList.add('active');
-            }
-            if(window.scrollY < 100) {
-                backtop.classList.remove('active');
-            }
-        });
-    </script>
-    <!-- Accessible accordions -->
-    <script>
-        function expandCollapse() {
-            var theHeaders = document.querySelectorAll('.expandCollapse h2'), i;
-            for (i = 0; i < theHeaders.length; i++) {
-                var thisEl = theHeaders[i],
-                theId = 'panel-' + i;
-                var thisTarget = thisEl.parentNode.querySelector('.panel');
-                if (!thisTarget) {
-                    continue;
-                }
-                thisEl.innerHTML = '<button aria-expanded="false" aria-controls="' + theId + '">' + thisEl.textContent + '</button>';
-                thisTarget.setAttribute('id', theId);
-                thisTarget.setAttribute('hidden', 'true');
-            }
-            var theButtons = document.querySelectorAll('.expandCollapse button[aria-expanded][aria-controls]');
-            for (i = 0; i < theButtons.length; i++) {
-                theButtons[i].addEventListener('click', function(e) {
-                    var thisButton = e.target;
-                    var state = thisButton.getAttribute('aria-expanded') === 'false' ? true : false;
-                    thisButton.setAttribute('aria-expanded', state);
-                    document.getElementById(thisButton.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
-                });
-            }
-        }
-        expandCollapse();
-    </script>
-    
+    <script src="main.js"></script>
+
 </body>
 </html>
