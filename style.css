@@ -142,6 +142,9 @@ button[aria-expanded="true"]::before {
         justify-content: space-around;
     }
 }
+.companies {
+    column-width: 190px;
+}
 .plateformes li,
 .companies li {
     text-transform: capitalize;
@@ -244,3 +247,10 @@ button[aria-expanded="true"]::before {
         padding: 0;
     }
 }
+.societe.esn:not([data-type="esn"]),
+.societe.digit:not([data-type="digit"]),
+.societe.cabinet:not([data-type="cabinet"]),
+.societe.pub:not([data-type="pub"]) {
+    display:none;
+}
+  

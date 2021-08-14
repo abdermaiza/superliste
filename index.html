@@ -188,121 +188,147 @@
             <div class="panel">
                 <p>Tout centraliser au même endroit : la recherche d'offres d'emploi vous est ainsi facilité.</p>
                 <p>Le classement alphabétique aide à vous y retrouver rapidement : sociétés, cabinets de recrutement/conseil, agences publicitaires/digitales et autres ESN de la région Parisienne.</p>
+
+
+                <!-- <div class="filter">
+                    <h3 class="filter__title">Filtrer les sociétés</h3>
+                    <div class="filters">
+                        <div class="input-block">
+                            <input value="esn" type="checkbox" id="esn" class="filter-input" name="filter" />
+                            <label for="esn" class="filter-label">ESN</label>
+                        </div>
+                        <div class="input-block">
+                            <input value="cabinet" type="checkbox" id="cabinet" class="filter-input" name="filter" />
+                            <label for="cabinet" class="filter-label">cabinet</label>
+                        </div>
+                        <div class="input-block">
+                            <input value="digit" type="checkbox" id="digit" class="filter-input" name="filter" />
+                            <label for="digit" class="filter-label">Agences digitales</label>
+                        </div>
+                      
+                        <div class="input-block">
+                            <input value="pub" type="checkbox" id="pub" class="filter-input" name="filter" />
+                            <label for="pub" class="filter-label">Agences publicitaires</label>
+                        </div>
+                    </div>
+                </div> -->
+                
                 <ul class="companies">
 
-                    <li><a href="https://www.accenture.com/fr-fr/careers">accenture</a></li>
-                    <li><a href="https://www.acensi.fr/offer">acensi</a></li>
-                    <li><a href="https://www.adimeo.com/carrieres-digitales">Adimeo</a></li>
-                    <li><a href="https://aliznet.fr/">aliznet</a></li>
-                    <li><a href="https://almaviacx.com/carrieres/nos-offres-d-emploi">almavia CX</a></li>
-                    <li><a href="https://alphonse.io/cote-talents/#Recrutement">alphonse</a></li>
-                    <li><a href="https://www.alteca.fr/carriere/">alteca</a></li>
-                    <li><a href="https://www.altedis.com/#portfolio-3">altedis</a></li>
-                    <li><a href="https://recrutement.alterway.fr/">AlterWay</a></li>
-                    <li><a href="https://ametix.com/nous-rejoindre/">ametix</a></li>
-                    <li><a href="https://recrutement.antadis.com/">antadis</a></li>
-                    <li><a href="https://apside.com/recrutement/">apside</a></li>
-                    <li><a href="https://astekjob.com/index.php/offres-d-emploi/">astek group</a></li>
-                    <li><a href="https://jobs.atos.net/">atos</a></li>
-                    <li><a href="https://www.aubay.com/index.php/les-offres-demploi-et-stages/">aubay</a></li>
-                    <li><a href="https://www.audacy.fr/">audacy</a></li>
-                    <li><a href="https://www.ausy.fr/fr/carriere/offre">ausy</a></li>
+                    <li class="societe" data-type="digit"><a href="https://www.accenture.com/fr-fr/careers">accenture</a></li>
+                    <li class="societe" data-type="digit"><a href="https://www.acensi.fr/offer">acensi</a></li>
+                    <li class="societe" data-type="pub"><a href="https://www.adimeo.com/carrieres-digitales">Adimeo</a></li>
+                    <li class="societe" data-type="digit"><a href="https://aliznet.fr/">aliznet</a></li>
+                    <li class="societe" data-type="cabinet"><a href="https://almaviacx.com/carrieres/nos-offres-d-emploi">almavia CX</a></li>
+                    <li class="societe"><a href="https://alphonse.io/cote-talents/#Recrutement">alphonse</a></li>
+                    <li class="societe"><a href="https://www.alteca.fr/carriere/">alteca</a></li>
+                    <li class="societe"><a href="https://www.altedis.com/#portfolio-3">altedis</a></li>
+                    <li class="societe" data-type="esn"><a href="https://recrutement.alterway.fr/">AlterWay</a></li>
+                    <li class="societe"><a href="https://ametix.com/nous-rejoindre/">ametix</a></li>
+                    <li class="societe"><a href="https://recrutement.antadis.com/">antadis</a></li>
+                    <li class="societe"><a href="https://apside.com/recrutement/">apside</a></li>
+                    <li class="societe"><a href="https://astekjob.com/index.php/offres-d-emploi/">astek group</a></li>
+                    <li class="societe"><a href="https://jobs.atos.net/">atos</a></li>
+                    <li class="societe"><a href="https://www.aubay.com/index.php/les-offres-demploi-et-stages/">aubay</a></li>
+                    <li class="societe"><a href="https://www.audacy.fr/">audacy</a></li>
+                    <li class="societe"><a href="https://www.ausy.fr/fr/carriere/offre">ausy</a></li>
 
-                    <li><a href="https://byrongroup.com/jobs">Byron group</a></li>
+                    <li class="societe"><a href="https://byrongroup.com/jobs">Byron group</a></li>
 
-                    <li><a href="https://capgemini-engineering.com/fr/fr/carrieres/postulez-maintenant/">capgemini engineering</a></li>  
-                    <li><a href="https://www.cerebro-technologie.fr/">cerebro technologie</a></li>     
-                    <li><a href="https://carrieres.claranet.fr/fr/annonces">claranet</a></li>
-                    <li><a href="https://www.clever-age.com/fr/carriere/#jobs-panel">Clever Age</a></li>
-                    <li><a href="https://www.clevermind.fr/">clevermind</a></li>
-                    <li><a href="https://www.cober.fr/">cober</a></li>
-                    <li><a href="https://www.computerfutures.com/fr-fr/job-search/">Computer futures</a></li>   
-                    <li><a href="https://www.conix.fr/jobs/">conix</a></li>
+                    <li class="societe"><a href="https://capgemini-engineering.com/fr/fr/carrieres/postulez-maintenant/">capgemini engineering</a></li>  
+                    <li class="societe"><a href="https://www.cerebro-technologie.fr/">cerebro technologie</a></li>     
+                    <li class="societe"><a href="https://carrieres.claranet.fr/fr/annonces">claranet</a></li>
+                    <li class="societe"><a href="https://www.clever-age.com/fr/carriere/#jobs-panel">Clever Age</a></li>
+                    <li class="societe"><a href="https://www.clevermind.fr/">clevermind</a></li>
+                    <li class="societe"><a href="https://www.cober.fr/">cober</a></li>
+                    <li class="societe"><a href="https://www.computerfutures.com/fr-fr/job-search/">Computer futures</a></li>   
+                    <li class="societe"><a href="https://www.conix.fr/jobs/">conix</a></li>
 
-                    <li><a href="https://www.datawords.com/fr/carrieres/">datawords</a></li>
-                    <li><a href="https://www.welcometothejungle.com/fr/companies/daveo/jobs">daveo</a></li>
-                    <li><a href="https://www.davidson.fr/nos-offres">Davidson consulting</a></li>
-                    <li><a href="https://www.degetel.com/fr/page-recrutement">degetel</a></li>
-                    <li><a href="https://www.welcometothejungle.com/fr/companies/devinsley/jobs">Devinsley</a></li>
-                    <li><a href="https://fr.devoteamcareers.com/">devoteam</a></li>
-                    <li><a href="https://www.digimind.com/jobs">Digimind</a></li>
-                    <li><a href="https://www.docaposte.com/recrutement/nous-rejoindre">docapost</a></li>
+                    <li class="societe"><a href="https://www.datawords.com/fr/carrieres/">datawords</a></li>
+                    <li class="societe"><a href="https://www.welcometothejungle.com/fr/companies/daveo/jobs">daveo</a></li>
+                    <li class="societe"><a href="https://www.davidson.fr/nos-offres">Davidson consulting</a></li>
+                    <li class="societe"><a href="https://www.degetel.com/fr/page-recrutement">degetel</a></li>
+                    <li class="societe"><a href="https://www.welcometothejungle.com/fr/companies/devinsley/jobs">Devinsley</a></li>
+                    <li class="societe"><a href="https://fr.devoteamcareers.com/">devoteam</a></li>
+                    <li class="societe"><a href="https://www.digimind.com/jobs">Digimind</a></li>
+                    <li class="societe"><a href="https://www.docaposte.com/recrutement/nous-rejoindre">docapost</a></li>
 
-                    <li><a href="https://easypartner.fr/candidat/">Easy partner</a></li>
-                    <li><a href="https://www.ekino.fr/carriere/">ekino</a></li>
-                    <li><a href="https://www.emagine.org/fr/nos-offres.html">Emagine consulting</a></li>
-                    <li><a href="https://eleven-labs.com/devenir-astronaute">Eleven Labs</a></li>   
-                    <li><a href="https://www.welcometothejungle.com/fr/companies/expertime/jobs">expertime</a></li>
-                    <li><a href="https://www.extia.fr/fr/offres-emploi">extia</a></li>
+                    <li class="societe"><a href="https://easypartner.fr/candidat/">Easy partner</a></li>
+                    <li class="societe"><a href="https://www.ekino.fr/carriere/">ekino</a></li>
+                    <li class="societe"><a href="https://www.emagine.org/fr/nos-offres.html">Emagine consulting</a></li>
+                    <li class="societe"><a href="https://eleven-labs.com/devenir-astronaute">Eleven Labs</a></li>   
+                    <li class="societe"><a href="https://www.welcometothejungle.com/fr/companies/expertime/jobs">expertime</a></li>
+                    <li class="societe"><a href="https://www.extia.fr/fr/offres-emploi">extia</a></li>
                     
-                    <li><a href="https://www.gitec.fr/offres-demploi/">gitec</a></li>
+                    <li class="societe"><a href="https://www.gitec.fr/offres-demploi/">gitec</a></li>
 
-                    <li><a href="https://www.hays.fr/chercher-un-emploi">hays</a></li>
-                    <li><a href="https://www.highteam.fr/">Highteam</a></li>
-                    <li><a href="https://www.hr-team.net/jobs/">HR team</a></li>
+                    <li class="societe"><a href="https://www.hays.fr/chercher-un-emploi">hays</a></li>
+                    <li class="societe"><a href="https://www.highteam.fr/">Highteam</a></li>
+                    <li class="societe"><a href="https://www.hr-team.net/jobs/">HR team</a></li>
 
-                    <li><a href="https://www.indexel.com">indexel</a></li>  
-                    <li><a href="https://gfi.world/fr-fr/carriere">inetum</a></li> 
-                    <li><a href="https://www.infogene.fr/nous-rejoindre/">infogene</a></li>               
-                    <li><a href="https://infotem.fr/nos-offres-emploi">infotem</a></li>    
-                    <li><a href="https://www.iseabloom.com/">iseabloom</a></li>
-                    <li><a href="https://www.ividata.com/blog">ividata</a></li>
+                    <li class="societe"><a href="https://www.indexel.com">indexel</a></li>  
+                    <li class="societe"><a href="https://gfi.world/fr-fr/carriere">inetum</a></li> 
+                    <li class="societe"><a href="https://www.infogene.fr/nous-rejoindre/">infogene</a></li>               
+                    <li class="societe"><a href="https://infotem.fr/nos-offres-emploi">infotem</a></li>    
+                    <li class="societe"><a href="https://www.iseabloom.com/">iseabloom</a></li>
+                    <li class="societe"><a href="https://www.ividata.com/blog">ividata</a></li>
 
-                    <li><a href="https://kaibee.fr/nous-rejoindre/">Kaibee</a></li>
-                    <li><a href="https://jobs.keyrus.fr/jobs">keyrus</a></li>
-                    <li><a href="https://carrieres.kleegroup.com/fr/annonces">Klee group</a></li>
-                    <li><a href="https://www.kleever.com/esprit/">kleever</a></li>
+                    <li class="societe"><a href="https://kaibee.fr/nous-rejoindre/">Kaibee</a></li>
+                    <li class="societe"><a href="https://jobs.keyrus.fr/jobs">keyrus</a></li>
+                    <li class="societe"><a href="https://carrieres.kleegroup.com/fr/annonces">Klee group</a></li>
+                    <li class="societe"><a href="https://www.kleever.com/esprit/">kleever</a></li>
 
-                    <li><a href="https://lanetscouade.com/rejoignez-nous/">La Netscouade</a></li>
-                    <li><a href="https://linkvalue.teamtailor.com/jobs">link value</a></li>
-                    <li><a href="http://www.logaxone.com/">logaxone</a></li>
-                    <li><a href="https://www.louis21.com/fr/nous-rejoindre/">Louis 21</a></li>
+                    <li class="societe"><a href="https://lanetscouade.com/rejoignez-nous/">La Netscouade</a></li>
+                    <li class="societe"><a href="https://linkvalue.teamtailor.com/jobs">link value</a></li>
+                    <li class="societe"><a href="http://www.logaxone.com/">logaxone</a></li>
+                    <li class="societe"><a href="https://www.louis21.com/fr/nous-rejoindre/">Louis 21</a></li>
 
-                    <li><a href="https://www.mobiapps.fr/carriere/nos-offres-demploi/">Mobiapps</a></li>
-                    <li><a href="https://mobiskill.fr/jobs/">Mobiskill</a></li>
-                    <li><a href="https://www.modisfrance.fr/tech-consulting/nos-offres/">Modis</a></li>
+                    <li class="societe"><a href="https://www.mobiapps.fr/carriere/nos-offres-demploi/">Mobiapps</a></li>
+                    <li class="societe"><a href="https://mobiskill.fr/jobs/">Mobiskill</a></li>
+                    <li class="societe"><a href="https://www.modisfrance.fr/tech-consulting/nos-offres/">Modis</a></li>
 
-                    <li><a href="https://neolynk.welcomekit.co/">neolynk</a></li>
-                    <li><a href="https://nexton-consulting.jobs.net/fr-FR/search">nexton consulting</a></li>
+                    <li class="societe"><a href="https://neolynk.welcomekit.co/">neolynk</a></li>
+                    <li class="societe"><a href="https://nexton-consulting.jobs.net/fr-FR/search">nexton consulting</a></li>
 
-                    <li><a href="https://www.oceaneconsulting.com/offres-emploi/">oceane consulting</a></li>
-                    <li><a href="https://www.groupeonepoint.com/fr/rejoindre-onepoint/">one point</a></li>
-                    <li><a href="https://open.wd3.myworkdayjobs.com/OPEN">Open</a></li>
+                    <li class="societe"><a href="https://www.oceaneconsulting.com/offres-emploi/">oceane consulting</a></li>
+                    <li class="societe"><a href="https://www.groupeonepoint.com/fr/rejoindre-onepoint/">one point</a></li>
+                    <li class="societe"><a href="https://open.wd3.myworkdayjobs.com/OPEN">Open</a></li>
 
-                    <li><a href="http://parteck.net/?post_type=offers">parteck</a></li>
-                    <li><a href="https://www.peritis.fr/annonces">peritis</a></li>
-                    <li><a href="https://carrieres.pwc.fr/fr/experimentes-offres/resultats.html?wdcountry=FRA|MCO&wdjobsite=Global_Experienced_Careers&wdisu=INT515_Adobe_FR_FR_ISU@pwc&submit1=Consultez%20toutes%20les%20offres">PWC</a></li>
+                    <li class="societe"><a href="http://parteck.net/?post_type=offers">parteck</a></li>
+                    <li class="societe"><a href="https://www.peritis.fr/annonces">peritis</a></li>
+                    <li class="societe"><a href="https://carrieres.pwc.fr/fr/experimentes-offres/resultats.html?wdcountry=FRA|MCO&wdjobsite=Global_Experienced_Careers&wdisu=INT515_Adobe_FR_FR_ISU@pwc&submit1=Consultez%20toutes%20les%20offres">PWC</a></li>
 
-                    <li><a href="https://rokett.co/job-offer">rokett.co</a></li>
+                    <li class="societe"><a href="https://rokett.co/job-offer">rokett.co</a></li>
 
-                    <li><a href="https://www.seryce.com/nous-rejoindre/">Seryce</a></li>
-                    <li><a href="https://jobs.lever.co/sfeir">Sfeir</a></li>
-                    <li><a href="https://www.siderlog.fr/annonces/">siderlog conseil</a></li>
-                    <li><a href="https://skillvalue.com/fr/jobs/search/">Skillvalue</a></li>      
-                    <li><a href="https://www.softeamgroup.fr/job/">softeam</a></li>
-                    <li><a href="https://www.fr.sogeti.com/rejoignez-nous/nous-rejoindre/">sogeti</a></li>
-                    <li><a href="https://www.soprasteria.fr/carrieres/rejoignez-nous/offres-emploi?job-family=conseil">sopra steria</a></li>
-                    <li><a href="https://www.styr.fr/formulaire-recrutement/">Styr</a></li>
-                    <li><a href="https://www.sunevit.com/offres-demploi/">Sunevit company</a></li>
-                    <li><a href="https://www.sweetpunk.com/rejoignez-nous/">sweetpunk</a></li>
-                    <li><a href="http://www.symane.com/#carriere">symane</a></li>
+                    <li class="societe"><a href="https://www.seryce.com/nous-rejoindre/">Seryce</a></li>
+                    <li class="societe"><a href="https://jobs.lever.co/sfeir">Sfeir</a></li>
+                    <li class="societe"><a href="https://www.siderlog.fr/annonces/">siderlog conseil</a></li>
+                    <li class="societe"><a href="https://skillvalue.com/fr/jobs/search/">Skillvalue</a></li>      
+                    <li class="societe"><a href="https://www.softeamgroup.fr/job/">softeam</a></li>
+                    <li class="societe"><a href="https://www.fr.sogeti.com/rejoignez-nous/nous-rejoindre/">sogeti</a></li>
+                    <li class="societe"><a href="https://www.soprasteria.fr/carrieres/rejoignez-nous/offres-emploi?job-family=conseil">sopra steria</a></li>
+                    <li class="societe"><a href="https://www.styr.fr/formulaire-recrutement/">Styr</a></li>
+                    <li class="societe"><a href="https://www.sunevit.com/offres-demploi/">Sunevit company</a></li>
+                    <li class="societe"><a href="https://www.sweetpunk.com/rejoignez-nous/">sweetpunk</a></li>
+                    <li class="societe"><a href="http://www.symane.com/#carriere">symane</a></li>
 
-                    <li><a href="https://trepia-astek.fr/index.php/nous-rejoindre/">trepia</a></li>
+                    <li class="societe"><a href="https://trepia-astek.fr/index.php/nous-rejoindre/">trepia</a></li>
 
-                    <li><a href="https://www.umanis.com/fr/rejoignez-nous">umanis</a></li>
-                    <li><a href="https://urbanlinker.com/fr/jobs">Urban Linker</a></li>
-                    <li><a href="https://www.welcometothejungle.com/fr/companies/uzik/jobs">uzik</a></li>
+                    <li class="societe"><a href="https://www.umanis.com/fr/rejoignez-nous">umanis</a></li>
+                    <li class="societe"><a href="https://urbanlinker.com/fr/jobs">Urban Linker</a></li>
+                    <li class="societe"><a href="https://www.welcometothejungle.com/fr/companies/uzik/jobs">uzik</a></li>
 
-                    <li><a href="https://www.valtech.com/fr-fr/talents/postes/?countryFrance">Valtech</a></li>
-                    <li><a href="https://www.viseo.com/fr/liste-offre-emplois">viseo</a></li>
+                    <li class="societe"><a href="https://www.valtech.com/fr-fr/talents/postes/?countryFrance">Valtech</a></li>
+                    <li class="societe"><a href="https://www.viseo.com/fr/liste-offre-emplois">viseo</a></li>
 
-                    <li><a href="https://www.linkedin.com/jobs/search/?f_C=9336627&geoId=92000000">warren walter</a></li>
-                    <li><a href="https://jobs.webnet.fr/">webnet</a></li>
+                    <li class="societe"><a href="https://www.linkedin.com/jobs/search/?f_C=9336627&geoId=92000000">warren walter</a></li>
+                    <li class="societe"><a href="https://jobs.webnet.fr/">webnet</a></li>
                     
-                    <li><a href="https://www.xo7.fr/jobs">xo7</a></li>  
+                    <li class="societe"><a href="https://www.xo7.fr/jobs">xo7</a></li>  
                     
-                    <li><a href="https://yomeva.com/">yomeva</a></li>
-                </ul>    
+                    <li class="societe"><a href="https://yomeva.com/">yomeva</a></li> 
+                </ul>
+                
             </div>
         </section>
 

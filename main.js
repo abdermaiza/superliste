@@ -9,6 +9,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
 // Accessible accordions
 function expandCollapse() {
     let theHeaders = document.querySelectorAll('.expandCollapse h2'), i;
@@ -35,4 +36,47 @@ function expandCollapse() {
 }
 expandCollapse();
 
+
 // Filter companies
+let type = ['esn', 'pub', 'cabinet', 'digit'];
+const filtreEntre = document.querySelectorAll(".filter-input");
+const entreprise = document.querySelectorAll(".societe");
+
+filtreEntre.forEach(item => {
+  item.addEventListener('click', event => {
+    if (item.value=='esn') {
+      entreprise.forEach(societe => {
+        societe.classList.toggle('esn');
+        societe.classList.remove('pub');
+        societe.classList.remove('digit');
+        societe.classList.remove('cabinet');
+      })
+    }
+    if (item.value=='pub') {
+      entreprise.forEach(societe => {
+        societe.classList.toggle('pub');
+        societe.classList.remove('esn');
+        societe.classList.remove('digit');
+        societe.classList.remove('cabinet');
+      })
+    }
+    if (item.value=='digit') {
+      entreprise.forEach(societe => {
+        societe.classList.toggle('digit');
+        societe.classList.remove('pub');
+        societe.classList.remove('esn');
+        societe.classList.remove('cabinet');
+      })
+    }
+    if (item.value=='cabinet') {
+        entreprise.forEach(societe => {
+          societe.classList.toggle('cabinet');
+          societe.classList.remove('pub');
+          societe.classList.remove('esn');
+          societe.classList.remove('digit');
+
+        })
+      }
+  })
+})
+
