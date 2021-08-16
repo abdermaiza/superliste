@@ -16,7 +16,7 @@ a {
     color: hsl(210, 88%, 26%);
 }
 a:hover {
-    color: #66CDAA
+    color: #66CDAA;
 }
 *:focus {
     outline: 2px solid hsl(200, 90%, 0%); 

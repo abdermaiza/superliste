@@ -1,3 +1,4 @@
+
 // Back-to-top animation
 const backtop = document.querySelector('.backTop');
 window.addEventListener('scroll', () => {
@@ -8,6 +9,7 @@ window.addEventListener('scroll', () => {
         backtop.classList.remove('active');
     }
 });
+
 
 
 // Accessible accordions
@@ -37,11 +39,60 @@ function expandCollapse() {
 expandCollapse();
 
 
+
+// Open accordion onclick nav items
+let one = document.querySelector('.one');
+let two = document.querySelector('.two');
+let three = document.querySelector('.three');
+let four = document.querySelector('.four');
+let five = document.querySelector('.five');
+let sectionTwo = document.getElementById('two');
+let sectionThree = document.getElementById('three');
+let sectionFour = document.getElementById('four');
+let sectionFive = document.getElementById('five');
+
+one.addEventListener('click', function() {
+  console.log('one');
+  let theButtons = document.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+  let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
+  theButtons.setAttribute('aria-expanded', state);
+  document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
+});
+two.addEventListener('click', function() {
+  console.log('two');
+  let theButtons = sectionTwo.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+  let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
+  theButtons.setAttribute('aria-expanded', state);
+  document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
+});
+three.addEventListener('click', function() {
+  console.log('two');
+  let theButtons = sectionThree.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+  let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
+  theButtons.setAttribute('aria-expanded', state);
+  document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
+});
+four.addEventListener('click', function() {
+  console.log('two');
+  let theButtons = sectionFour.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+  let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
+  theButtons.setAttribute('aria-expanded', state);
+  document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
+});
+five.addEventListener('click', function() {
+  console.log('two');
+  let theButtons = sectionFive.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+  let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
+  theButtons.setAttribute('aria-expanded', state);
+  document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
+});
+
+
+
 // Filter companies
 let type = ['esn', 'pub', 'cabinet', 'digit'];
 const filtreEntre = document.querySelectorAll(".filter-input");
 const entreprise = document.querySelectorAll(".societe");
-
 filtreEntre.forEach(item => {
   item.addEventListener('click', event => {
     if (item.value=='esn') {
@@ -79,4 +130,3 @@ filtreEntre.forEach(item => {
       }
   })
 })
-
