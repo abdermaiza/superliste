@@ -23,7 +23,7 @@ a:hover {
 }
 @media screen and (max-width:38em){
     ul {
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
     .list-break li {
         word-break: break-all;
