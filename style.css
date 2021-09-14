@@ -34,7 +34,6 @@ ul {
 }      
 li {
     margin: 1rem 0;
-    list-style-type: symbols;
 }
 h1 {
     font-size: clamp(1.5rem, 3vw, 3rem);
@@ -144,6 +143,10 @@ button[aria-expanded="true"]::before {
 }
 .companies {
     column-width: 190px;
+}
+.companies li,
+.conseils li {
+    list-style-type: symbols;
 }
 .plateformes li,
 .companies li {
