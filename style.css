@@ -123,6 +123,7 @@ button[aria-expanded="true"]::before {
 }
 .nav--list {
     padding-left: 2rem;
+    margin: 0;
 }
 .nav--list > li {
     list-style-type: none;
