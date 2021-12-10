@@ -41,47 +41,51 @@ expandCollapse();
 
 
 // Open accordion onclick nav items
-let one = document.querySelector('.one');
-let two = document.querySelector('.two');
-let three = document.querySelector('.three');
-let four = document.querySelector('.four');
-let five = document.querySelector('.five');
-let sectionTwo = document.getElementById('two');
-let sectionThree = document.getElementById('three');
-let sectionFour = document.getElementById('four');
-let sectionFive = document.getElementById('five');
+let jobboards = document.querySelector('.jobboards_link');
+let lectures = document.querySelector('.lectures_link');
+let plateformes = document.querySelector('.plateformes_link');
+let societes = document.querySelector('.societes_link');
+let aides = document.querySelector('.aides_link');
+let conseils = document.querySelector('.conseils_link');
+let sectionJobboards = document.getElementById('jobboards');
+let sectionLectures = document.getElementById('lectures');
+let sectionPlateformes = document.getElementById('plateformes');
+let sectionSocietes = document.getElementById('societes');
+let sectionAides = document.getElementById('aides');
+let sectionConseils = document.getElementById('conseils');
 
-one.addEventListener('click', function() {
-  console.log('one');
-  let theButtons = document.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+jobboards.addEventListener('click', function() {
+  let theButtons = sectionJobboards.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
   let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
   theButtons.setAttribute('aria-expanded', state);
   document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
 });
-two.addEventListener('click', function() {
-  console.log('two');
-  let theButtons = sectionTwo.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+lectures.addEventListener('click', function() {
+  let theButtons = sectionLectures.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
   let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
   theButtons.setAttribute('aria-expanded', state);
   document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
 });
-three.addEventListener('click', function() {
-  console.log('two');
-  let theButtons = sectionThree.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+plateformes.addEventListener('click', function() {
+  let theButtons = sectionPlateformes.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
   let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
   theButtons.setAttribute('aria-expanded', state);
   document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
 });
-four.addEventListener('click', function() {
-  console.log('two');
-  let theButtons = sectionFour.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+societes.addEventListener('click', function() {
+  let theButtons = sectionSocietes.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
   let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
   theButtons.setAttribute('aria-expanded', state);
   document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
 });
-five.addEventListener('click', function() {
-  console.log('two');
-  let theButtons = sectionFive.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+aides.addEventListener('click', function() {
+  let theButtons = sectionAides.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
+  let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
+  theButtons.setAttribute('aria-expanded', state);
+  document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
+});
+conseils.addEventListener('click', function() {
+  let theButtons = sectionConseils.querySelector('.expandCollapse button[aria-expanded][aria-controls]');
   let state = theButtons.getAttribute('aria-expanded') === 'false' ? true : false;
   theButtons.setAttribute('aria-expanded', state);
   document.getElementById(theButtons.getAttribute('aria-controls')).toggleAttribute('hidden', !state);
