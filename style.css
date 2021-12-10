@@ -21,7 +21,7 @@ a:hover {
 *:focus {
     outline: 2px solid hsl(200, 90%, 0%); 
 }
-@media screen and (max-width:38em){
+@media screen and (max-width:38em) {
     ul {
         padding: 1rem 2rem;
     }
@@ -148,6 +148,15 @@ button[aria-expanded="true"]::before {
 .companies li {
     text-transform: capitalize;
 }
+.jobboards a[target="_blank"]::after,
+.plateformes a[target="_blank"]::after {
+    content: url(https://iconoir.com/source/icons/open-in-window.svg);
+    display: inline-block;
+    margin-left: .5rem;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+}
 .footer {
     padding: 4rem;
     margin: -2rem;
@@ -171,7 +180,7 @@ button[aria-expanded="true"]::before {
 .footer .icon svg:hover path {
     fill: #222;
 }
-.sr-only{
+.sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -183,7 +192,7 @@ button[aria-expanded="true"]::before {
     border: 0;
 }
 .sr-only--focusable:active,
-.sr-only--focusable:focus{
+.sr-only--focusable:focus {
     position: static;
     width: auto;
     height: auto;
@@ -191,7 +200,7 @@ button[aria-expanded="true"]::before {
     clip: auto;
     white-space: normal;
 }
-.skippy{
+.skippy {
     display: block;
     padding: 1rem;
     z-index: 22;
@@ -200,7 +209,7 @@ button[aria-expanded="true"]::before {
     color: #222;
     background-color: transparent;
 }
-.skippy__text{
+.skippy__text {
     padding: .5rem;
     outline: 1px dotted #222;
 }
