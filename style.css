@@ -253,6 +253,7 @@ button[aria-expanded="true"]::before {
     .section {
         margin: 1rem 0;
         padding: 0;
+        background-color: transparent;
     }
 }
 .societe.esn:not([data-type="esn"]),
