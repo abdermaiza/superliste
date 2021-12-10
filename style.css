@@ -84,10 +84,6 @@ button[aria-expanded="true"]::before {
     margin: -2rem;
     margin-top: 3rem;
 }
-.logo {
-    margin: 0 auto;
-    text-align: center;
-}
 .main {
     margin: 0 auto;
     max-width: 63rem;
@@ -99,9 +95,9 @@ button[aria-expanded="true"]::before {
     border-radius: .4rem;
     overflow: hidden;
 }
+.logo,
 .title {
     text-align: center;
-    margin: 3rem 0;
 }
 .upp {
     text-transform: uppercase;
