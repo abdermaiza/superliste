@@ -234,7 +234,7 @@ button[aria-expanded="true"]::before {
     transition: all .3s ease-in-out;
 }
 .backTop:hover {
-    background:hsl(0, 0%, 30%) url(https://codyhouse.co/demo/back-to-top/assets/img/cd-top-arrow.svg) no-repeat center 50%;
+    background-color:hsl(0, 0%, 30%);
 }
 .backTop.active {
     visibility: visible;
