@@ -43,6 +43,9 @@ h2, h3, button  {
     margin: 0;
     padding: 0;
 }
+p::selection {
+    background-color: hsl(160, 51%,50%);
+}
 button {
     background-color: transparent;
     border: none;
