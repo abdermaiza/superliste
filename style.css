@@ -93,7 +93,7 @@ button[aria-expanded="true"]::before {
 }
 .section {
     margin: 4rem 0;
-    background: linear-gradient(30deg, #E6E6E6, #FAF8F9);
+    background: linear-gradient(30deg, #E6E6E6, #ccc);
     padding: 2rem;
     border-radius: .4rem;
     overflow: hidden;
