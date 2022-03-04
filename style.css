@@ -43,7 +43,8 @@ h2, h3, button  {
     margin: 0;
     padding: 0;
 }
-p::selection {
+p::selection,
+mark {
     background-color: hsl(160, 51%,50%);
 }
 button {
