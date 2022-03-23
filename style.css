@@ -3,8 +3,9 @@ html {
     font-size: calc(1em * .625);
     scroll-behavior: smooth;
 }
-*, *::after, *::before {
-    -webkit-box-sizing: border-box;
+*, 
+*::after, 
+*::before {
     box-sizing: border-box;
 }
 body, 
@@ -76,6 +77,7 @@ button[aria-expanded="true"]::before {
     font-size: 1.6rem;
     line-height: 1.5;
     position: relative;
+    text-rendering: optimizeSpeed;
     padding: 2rem;
     color: #202020;
 }
@@ -177,10 +179,10 @@ button[aria-expanded="true"]::before {
     border-radius: 100%;
     cursor: pointer;
 }
-.footer .icon--slack {
+.icon--slack {
     width: 7.5rem;
 }
-.footer .icon svg:hover path {
+.footer svg:hover path {
     fill: #222;
 }
 .sr-only {
@@ -265,4 +267,3 @@ button[aria-expanded="true"]::before {
 .societe.pub:not([data-type="pub"]) {
     display:none;
 }
-  
