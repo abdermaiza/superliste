@@ -92,11 +92,17 @@ button[aria-expanded="true"]::before {
     max-width: 63rem;
 }
 .section {
-    margin: 4rem 0;
+    margin: 2rem 0;
     background: linear-gradient(30deg, #E6E6E6, #ccc);
-    padding: 2rem;
+    padding: 1rem 2rem;
     border-radius: .4rem;
     overflow: hidden;
+}
+@media screen and (min-width:48rem) {
+    .section {
+        margin: 4rem 0;
+        padding: 2rem;
+    }
 }
 .logo,
 .title {
@@ -266,4 +272,12 @@ button[aria-expanded="true"]::before {
 .societe.cabinet:not([data-type="cabinet"]),
 .societe.pub:not([data-type="pub"]) {
     display:none;
+}
+.hide-sm {
+    display: none;
+}
+@media screen and (min-width:48em) {
+    .hide-sm {
+        display: block;
+    }
 }
