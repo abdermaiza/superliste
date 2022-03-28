@@ -98,6 +98,9 @@ button[aria-expanded="true"]::before {
     border-radius: .4rem;
     overflow: hidden;
 }
+.main .section:last-child {
+    margin-bottom: 5rem;
+}
 @media screen and (min-width:48rem) {
     .section {
         margin: 4rem 0;
