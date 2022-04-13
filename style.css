@@ -71,7 +71,6 @@ button[aria-expanded="false"]::before {
 }
 button[aria-expanded="true"]::before {
     content: '\25bc\0020';
-    color: hsl(160, 51%, 70%);
 }
 .body {
     -webkit-font-smoothing: antialiased;
