@@ -15,9 +15,11 @@ html {
 }
 a {
     color: hsl(210, 88%, 26%);
+    text-decoration: none;
 }
 a:hover {
     color: #66CDAA;
+    text-decoration: underline;
 }
 *:focus {
     outline: 2px solid hsl(200, 90%, 0%); 
