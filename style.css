@@ -178,7 +178,7 @@ button[aria-expanded="true"]::before {
     margin: -2rem;
     position: relative;
     text-align: center;
-    background-color: #E6E6E6;
+    background-color: #ccc;
 }
 .footer .icon {
     list-style-type: none;
