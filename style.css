@@ -68,9 +68,13 @@ button:hover {
 }
 button[aria-expanded="false"]::before {
     content: '\25ba\0020';
+    width: 2.2rem;
+    display: inline-block;
 }
 button[aria-expanded="true"]::before {
     content: '\25bc\0020';
+    width: 2.2rem;
+    display: inline-block;
 }
 iframe {
     max-width: 100%;
