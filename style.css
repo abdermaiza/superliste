@@ -197,6 +197,9 @@ iframe {
     border-radius: 100%;
     cursor: pointer;
 }
+.footer img {
+    max-width: 4rem;
+}
 .icon--slack {
     width: 7.5rem;
 }
