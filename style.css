@@ -173,7 +173,7 @@ iframe {
 }
 .jobboards a[target="_blank"]::after,
 .plateformes a[target="_blank"]::after {
-    content: url(https://iconoir.com/source/open-in-window.svg);
+    content: url(open-in-window.svg);
     display: inline-block;
     margin-left: .5rem;
     width: 1rem;
