@@ -282,12 +282,6 @@ iframe {
         background-color: transparent;
     }
 }
-.societe.esn:not([data-type="esn"]),
-.societe.digit:not([data-type="digit"]),
-.societe.cabinet:not([data-type="cabinet"]),
-.societe.pub:not([data-type="pub"]) {
-    display:none;
-}
 .hide-sm {
     display: none;
 }
