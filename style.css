@@ -150,7 +150,7 @@ iframe {
 .nav--list > li {
     list-style-type: none;
     padding: .5rem 1rem;
-    background-color: hsl(160, 51%, 90%);
+    background-color: hsl(160, 72%, 90%);
     border-radius: .4rem;
     max-width: 21rem;
 }
